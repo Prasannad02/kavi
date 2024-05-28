@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("471aqoBHX-5xWVyZs");
+        })();
+    </script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Kaviarasu</h1>
+            <h3>And I'm a <span id="multiple-text"></span></h3>
+            <p>Hi, I'm Kaviyarasu, an AWS Cloud Engineer with a background in Medical Electronics. I specialize in optimizing software development through continuous integration and infrastructure automation, with hands-on experience in deploying and scaling applications on AWS.<br><br>Having knowledge in:<br>Amazon Web services (AWS):EC2,S3,IAM,RDS, CLOUD TRAIL,SNS,SQS</p>
+            <div class="social-media">
+                <a href="https://github.com/Kaviyarasu5kavi"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:kaviarasu305@gmail.com"><i class="fa-solid fa-envelopes-bulk"></i></a>
+                <a href="https://www.instagram.com/kavikavi.dk/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/kaviyarasu2/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1SRBg06O-UzOYbH_cjmY6kHk5hxA_mmZx/view?usp=drivesdk" class="btn">Download Cv</a>
+        </div>
+        <div class="home-img">
+            <img src="images/kavi.png" alt="Floating Image">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Devops Engineer</h3>
+            <p>Hi, I'm kaviyarasu, Medical electronics turned
+                AWS cloud Engineer with a strong foundation in cloud technologies.Dedicated to optimising software development process through continuous integration, infrastructure automation. Equipped with hands -on experience in deploying and scaling application on the Amazon Web services platform.</p>
+            <a href="https://www.linkedin.com/in/kaviyarasu2/" class="btn">Read more</a>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-computer-mouse"></i>
+                <h3>Compute Services</h3>
+                <p>AWS, Azure, and Google Cloud offer scalable compute services like EC2, Virtual Machines, and Compute Engine, alongside managed Kubernetes (EKS, AKS, Kubernetes Engine) and serverless options (Lambda, Functions, Cloud Functions) for efficient application deployment.</p>
+                <a href="#services" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-box"></i>
+                <h3>Storage Services</h3>
+                <p>AWS, Azure, and Google Cloud offer diverse storage services including object storage (S3, Blob Storage, Cloud Storage), block storage (EBS, Disk Storage, Persistent Disks), and file storage (Glacier, Azure Files, Filestore) to meet various data storage needs efficiently and securely.</p>
+                <a href="#services" class="btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class="fa-solid fa-wifi"></i>
+                <h3>Networking Services</h3>
+                <p>AWS, Azure, and Google Cloud offer networking services like VPC/VNet, DNS management (Route 53, Azure DNS, Cloud DNS), and direct connection options (Direct Connect, ExpressRoute, Cloud Interconnect) for creating secure, scalable, and reliable cloud networks.</p>
+                <a href="#services" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/img1.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Web Application</h4>
+                    <p>Deployed Web App on AWS EC2 with Auto-scaling and load balancing for High Availability.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/img2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>AutoScaling group on the web application </h4>
+                    <p>Implemented auto-scaling with GCP MIGs to dynamically scale instances based on traffic.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/img3.png" alt="">
+                <div class="portfolio-layer">
+                    <h4>Serverless Application Development</h4>
+                    <p>Create a serverless application using AWS Lambda, API Gateway, and DynamoDB.</p>
+                    <a href=""><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form id="contactForm">
+            <div class="input-box">
+                <input type="text" id="fullName" placeholder="Full Name">
+                <input type="email" id="email_id" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" id="mobile" placeholder="Mobile Number">
+                <input type="text" id="subject" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="message" cols="5" rows="8" placeholder="Your Message"></textarea>
+            <input onclick="SendMail()" type="submit" value="send Message" class="btn">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>copyright &copy; 2024 by @kaviyarasu | All Rights Reserved</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+</html>
